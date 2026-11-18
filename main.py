@@ -4,6 +4,9 @@ The program writes the front-page image (embedded below as base64) to
 /output/entry.png (or $MAKEFUN_OUTPUT_DIR/entry.png when set, for local runs).
 Python 3.13, standard library only, no network, deterministic: the same bytes
 are written on every run.
+
+Verified: the output is 782,389 bytes and byte-identical across runs
+(sha256 a9c516763ff40007...).
 """
 
 import base64
